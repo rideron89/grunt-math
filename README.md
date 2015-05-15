@@ -110,8 +110,8 @@ An HTML file with the following markup:
 
 ```html
 <div>
-    gulpmath(abc = 5);
-    <p>There are gulpmath(10 * 2 - abc); meese in the lodge.</p>
+    gruntmath(abc = 5);
+    <p>There are gruntmath(10 * 2 - abc); meese in the lodge.</p>
 </div>
 ```
 
@@ -126,7 +126,7 @@ Will output the following:
 You can escape semi-colons in your expressions if you need to use them:
 
 ```javascript
-gulpmath(5\;20); // returns [20]
+gruntmath(5\;20); // returns [20]
 ```
 
 ### Known Issues
@@ -134,5 +134,5 @@ gulpmath(5\;20); // returns [20]
 Unit conversions work, but the results may produce unusual results:
 
 ```javascript
-gulpmath(5.08 cm to inch); // on Windows, this produces 2.0000000000000004 inch
+gruntmath(5.08 cm to inch); // on Windows, this produces 2.0000000000000004 inch
 ```
