@@ -30,20 +30,42 @@ module.exports = function(grunt) {
 
     // Configuration to be run (and then tested).
     math: {
-      default_options: {
+      simple_expressions: {
         options: {
+          variables: {
+            a: 2,
+            b: 3
+          }
         },
         files: {
-          'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123']
+          'tmp/simple_expressions': ['test/fixtures/simple_expressions']
         }
       },
-      custom_options: {
+      mathjs_expressions: {
         options: {
-          separator: ': ',
-          punctuation: ' !!!'
+          variables: {
+          }
         },
         files: {
-          'tmp/custom_options': ['test/fixtures/testing', 'test/fixtures/123']
+          'tmp/mathjs_expressions': ['test/fixtures/mathjs_expressions']
+        }
+      },
+      options_eval_precision: {
+        options: {
+          eval_precision: 7
+        },
+        files: {
+          'tmp/options_eval_precision': ['test/fixtures/options_eval_precision']
+        }
+      },
+      options_number: {
+        options: {
+          eval_precision: 2,
+          number: 'bignumber',
+          precision: 5
+        },
+        files: {
+          'tmp/options_number': ['test/fixtures/options_number']
         }
       }
     },

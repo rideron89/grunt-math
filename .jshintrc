@@ -1,6 +1,7 @@
 {
   "curly": true,
-  "eqeqeq": true,
+  "eqeqeq": false, // need this for isInt() and isFloat() to work
+  "evil": true, // Math.js's eval() function is flagged as a false-positive
   "immed": true,
   "latedef": true,
   "newcap": true,
