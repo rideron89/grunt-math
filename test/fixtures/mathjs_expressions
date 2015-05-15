@@ -1,0 +1,5 @@
+gruntmath(1.2 * (2 + 4.5));
+gruntmath(2 foot to foot);
+gruntmath(sin(45 deg) ^ 2);
+gruntmath(9 / 3 + 2i);
+gruntmath(det([-1, 2\; 3, 1]));

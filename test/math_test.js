@@ -20,29 +20,46 @@ var grunt = require('grunt');
     test.throws(block, [error], [message])
     test.doesNotThrow(block, [error], [message])
     test.ifError(value)
-*/
+ */
 
-exports.math = {
-  setUp: function(done) {
-    // setup here if necessary
-    done();
-  },
-  default_options: function(test) {
-    test.expect(1);
+    exports.math = {
+      setUp: function(done) {
+        done();
+    },
+    simple_expressions: function(test) {
+        test.expect(1);
 
-    var actual = grunt.file.read('tmp/default_options');
-    var expected = grunt.file.read('test/expected/default_options');
-    test.equal(actual, expected, 'should describe what the default behavior is.');
+        var actual = grunt.file.read('tmp/simple_expressions');
+        var expected = grunt.file.read('test/expected/simple_expressions');
+        test.equal(actual, expected, 'should test simple expressions involving algebra and variables');
 
-    test.done();
-  },
-  custom_options: function(test) {
-    test.expect(1);
+        test.done();
+    },
+    mathjs_expressions: function(test) {
+        test.expect(1);
 
-    var actual = grunt.file.read('tmp/custom_options');
-    var expected = grunt.file.read('test/expected/custom_options');
-    test.equal(actual, expected, 'should describe what the custom option(s) behavior is.');
+        var actual = grunt.file.read('tmp/mathjs_expressions');
+        var expected = grunt.file.read('test/expected/mathjs_expressions');
+        test.equal(actual, expected, 'should test examples of Math.js expressions');
 
-    test.done();
-  },
+        test.done();
+    },
+    options_eval_precision: function(test) {
+        test.expect(1);
+
+        var actual = grunt.file.read('tmp/options_eval_precision');
+        var expected = grunt.file.read('test/expected/options_eval_precision');
+        test.equal(actual, expected, 'should test setting the eval_precision option');
+
+        test.done();
+    },
+    options_number: function(test) {
+        test.expect(1);
+
+        var actual = grunt.file.read('tmp/options_number');
+        var expected = grunt.file.read('test/expected/options_number');
+        test.equal(actual, expected, 'should test setting the number and precision options');
+
+        test.done();
+    }
 };

@@ -1,0 +1,6 @@
+gruntmath(5);
+gruntmath(5 + 5);
+gruntmath(a + b);
+gruntmath(5 + (a * 5) / 5);
+gruntmath(a + 5); and gruntmath(b + 5);
+gruntmath(5\;20);
