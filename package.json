@@ -2,22 +2,22 @@
   "name": "grunt-math",
   "description": "Evaluate math expressions with grunt",
   "version": "1.0.0",
-  "homepage": "https://github.com/rrider/grunt-math",
+  "homepage": "https://github.com/rideron89/grunt-math",
   "author": {
     "name": "Ron Rider",
     "email": "rideron89@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/rrider/grunt-math.git"
+    "url": "git://github.com/rideron89/grunt-math.git"
   },
   "bugs": {
-    "url": "https://github.com/rrider/grunt-math/issues"
+    "url": "https://github.com/rideron89/grunt-math/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/rrider/grunt-math/blob/master/LICENSE-MIT"
+      "url": "https://github.com/rideron89/grunt-math/blob/master/LICENSE-MIT"
     }
   ],
   "engines": {
