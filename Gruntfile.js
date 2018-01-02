@@ -61,7 +61,7 @@ module.exports = function(grunt) {
       options_number: {
         options: {
           eval_precision: 2,
-          number: 'bignumber',
+          number: 'BigNumber',
           precision: 5
         },
         files: {

@@ -31,7 +31,7 @@ module.exports = function(grunt) {
         var options = this.options({
           epsilon: 1e-14,
           eval_precision: 3,
-          matrix: 'matrix',
+          matrix: 'Matrix',
           number: 'number',
           precision: 64,
           variables: {}

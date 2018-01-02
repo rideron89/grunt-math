@@ -64,16 +64,16 @@ The number of decimal places used when evaluating expressions. This option will 
 #### options.matrix
 Type: `String`
 Default: `matrix`
-Available values: `matrix` or `array`
+Available values: `Matrix` or `array`
 
-The default type of matrix output for functions. Available values are: `matrix` (default) or `array`. Where possible, the type of matrix output from functions is determined from the function input: An array as input will return an Array, a Matrix as input will return a Matrix. In case of no matrix as input, the type of output is determined by the option matrix. In case of mixed matrix inputs, a matrix will be returned always.
+The default type of matrix output for functions. Available values are: `Matrix` (default) or `array`. Where possible, the type of matrix output from functions is determined from the function input: An array as input will return an Array, a Matrix as input will return a Matrix. In case of no matrix as input, the type of output is determined by the option matrix. In case of mixed matrix inputs, a matrix will be returned always.
 
 #### options.number
 Type: `String`
 Default: `number`
-Available values: `number` or `bignumber`
+Available values: `number` or `BigNumber`
 
-The default type of numbers. This setting is used by functions like `eval` which cannot determine the correct type of output from the functions input. For most functions though, the type of output is determined from the the input: a number as input will return a number as output, a BigNumber as input returns a BigNumber as output. Available values are: `number` (default) or `bignumber`. BigNumbers have higher precision than the default numbers of JavaScript.
+The default type of numbers. This setting is used by functions like `eval` which cannot determine the correct type of output from the functions input. For most functions though, the type of output is determined from the the input: a number as input will return a number as output, a BigNumber as input returns a BigNumber as output. Available values are: `number` (default) or `BigNumber`. BigNumbers have higher precision than the default numbers of JavaScript.
 
 #### options.precision
 Type: `Integer`
@@ -98,7 +98,7 @@ options {
 }
 ```
 
-This allows you to form expressions in the like so:
+This allows you to form dynamic expressions, like so:
 
 ```js
 gruntmath((5 * alpha) + bravo); // returns 50
