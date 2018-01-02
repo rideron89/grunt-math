@@ -1,7 +1,7 @@
 {
   "name": "grunt-math",
   "description": "Evaluate math expressions with grunt",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "homepage": "https://github.com/rideron89/grunt-math",
   "author": {
     "name": "Ron Rider",
